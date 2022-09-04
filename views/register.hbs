@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+    <title>{{titulo}}</title>
+  </head>
+  <body>
+    <div class="register-form">
+	<h2>Register con node</h2>
+	{{#if error}}
+	{{error}}
+	{{/if}}
+	<form action="/register" method="POST">
+	<label for="user">Username:</label>
+	<input type="text" name="user" id="user" required>
+	<label for="name">Nombre Completo:</label>
+	<input type="text" name="name" id="name" required>
+	<label for="pass">Password:</label>
+	<input type="password" name="pass" id="pass" required>
+	<label for="rol">Rol</label>
+	<select id="rol" name="rol">
+	<option value="admin" selected>Admin</option>
+	<option value="data entry">Data Entry</option>
+	</select>
+	<button type="submit" class="btn-login">Registrarse</button>
+	<a href="/">Cancelar</a>
+	</form>
+	</div>
+  </body>
+</html>
