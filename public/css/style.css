@@ -1,0 +1,67 @@
+
+body {
+	margin: auto;
+	text-align: center;
+	
+}
+
+.login-form, .register-form {
+	
+	width: 300px;
+	margin: 0 auto;
+	
+}
+
+.login-form h2 ,
+.register-form h2{
+	text-align: center;
+	color: midnightblue;
+	font-size: 20px;
+	padding: 70px 0 10px 0;
+	
+}
+
+.login-form input[type="password"],
+.login-form input[type="text"],
+.register-form input[type="password"],
+.register-form input[type="text"] {
+	width:  100%;
+	padding: 15px;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	
+}
+
+.btn-login,
+.btn-register {
+	width: 100%;
+	padding: 15px;
+	background-color: purple;
+	border: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: large;
+	color: white;
+	margin-top: 10px;
+	
+}
+
+.btn-login:hover{
+	background-color: red;
+	
+}
+
+
+.btn-register:hover{
+	background-color: gray;
+	
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	
+}
+
